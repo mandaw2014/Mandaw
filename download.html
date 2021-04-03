@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Download</title>
+    <link rel="stylesheet" href="./style.css">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,100;1,300&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div class="topnav" id="myTopnav">
+        <a href="./index.html">Home<button id="home" class="btn"></button></a>
+        <a class="active">Download<button id="weather" class="btn"></button></a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
+    </div>
+
+    <div class="bg"></div>
+
+    <a href="./Mandaw.exe" target="_blank"><button id="download">Download</button></a>
+
+    <div id="stepDiv">
+        <h1 id="downloadSteps">Download Steps</h1>
+        <h2 id="steps"><br><br> 1. Download the the app <a href="./Mandaw.exe">here</a>. <img src="./Screenshots/exe.png" id="exe"><br><br><br> <br>2. Double click the app. <br><br>3. If your on a Windows computer, you will get a popup from Microsoft Defender. <br> <img src="./Screenshots/defender.png" id="defender"> <br><br><br><br> 4. Click More info and click Run anyway. <br><br><br> <img src="./Screenshots/run.png" id="run"> <br><br><br> 5. Your done. <br> You can put the app onto your <br> desktop so you can access it any time. <br><br><br><br> <img src="./Screenshots/mandawweather.png" id="weatherSteps">  <br><br><br><br>   Mandaw will never steal any of your personal information <br> and it will not infect your computer with a virus. Microsoft Defender alerts you when you <br> have downloaded something off Google.</h2>
+    </div>
+
+    <div id="footer">
+        <p id="copyright">All rights reserved. Mandaw © 2021</p>
+    </div>
+</body>
+<script src="./download.js"></script>
+</html>

@@ -1,0 +1,531 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+html, body {
+    scroll-behavior: smooth;
+    width: 100%;
+}
+
+.topnav {
+    background-color: #333;
+    overflow: hidden;
+    padding: 0;
+    margin: 0;
+}
+
+.topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 1.4vw;
+}
+
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.topnav a.active {
+    background-color: #07d3ff;
+    color: white;
+}
+
+.topnav .icon {
+    display: none;
+}
+
+@media screen and (max-width: 600px) {
+    .topnav a:not(:first-child) {display: none;}
+    .topnav a.icon {
+        float: right;
+        display: block;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .topnav.responsive {position: relative;}
+    .topnav.responsive a.icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    .topnav.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+}
+
+.bg {
+    background-image: url("./Screenshots/sunset.png");
+    background-repeat: repeat no-repeat;
+    height: 100vh;
+    width: 100%;
+    opacity: 0.5;
+    overflow: hidden;
+    padding: 100px 0px;
+    position: relative; 
+}
+
+#title {
+    color: rgb(0, 0, 0, 0.5);
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    font-size: 8vw;
+    position: absolute;
+    top: 350px;
+    transition: font-size 0.5s;
+    width: 100%;
+}
+
+#title:hover {
+    font-size: 9vw;
+}
+
+#wbg {
+    position: absolute;
+    top: 1100px;
+    opacity: 0.5;
+    height: 1070px;
+    width: 100%;
+}
+
+#weatherText {
+    color: rgb(48, 48, 48);
+    font-size: 5vw;
+    font-family: 'Roboto', sans-serif;
+    position: absolute;
+    top: 1250px;
+    left: 20px;
+    opacity: 1;
+}
+
+#mandawweather {
+    width: 50%;
+    height: auto;
+    position: relative;
+    top: 300px;
+    left: 20px;
+    opacity: 1;
+}
+
+#ces {
+    position: absolute;
+    left: 1000px;
+    top: 1500px;
+    font-size: 4vw;
+    font-weight: 1000;
+    padding: 0;
+    margin: 0;
+}
+
+.download {
+    background-color: rgb(9, 206, 255);
+    color: white;
+    font-size: 2vw;
+    text-decoration: none;
+    border-radius: 30px 30px 30px 30px;
+    height: 60px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    top: 600px;
+    width: 20%;
+}
+
+#download {
+    background-color: rgb(9, 206, 255);
+    color: white;
+    font-size: 2vw;
+    text-decoration: none;
+    border-radius: 30px 30px 30px 30px;
+    height: 60px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    top: -800px;
+    width: 20%;
+}
+
+#mbg {
+    position: absolute;
+    top: 2400px;
+    width: 100%;
+    opacity: 0.3;
+}
+
+#mandawBot {
+    color: rgb(48, 48, 48);
+    font-size: 5vw;
+    font-family: 'Roboto', sans-serif;
+    position: relative;
+    top: 930px;
+    left: -30px;
+    opacity: 0;
+    text-align: right;
+}
+
+#mandawImg {
+    height: 80px;
+    width: 30%;
+    position: relative;
+    top: 1000px;
+    left: -30px;
+    opacity: 0;
+    display: block;
+    margin-left: auto;
+}
+
+#haf {
+    position: absolute;
+    top: 2670px;
+    left: 50px;
+    font-size: 4vw;
+    font-weight: 1000;
+}
+
+#btn {
+    background-color: rgb(9, 206, 255);
+    color: white;
+    font-size: 2vw;
+    text-decoration: none;
+    border-radius: 30px 30px 30px 30px;
+    width: 20%;
+    height: 60px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    top: 1600px;
+}
+
+#home {
+    position: absolute;
+    width: 85px;
+    height: 54px;
+    left: 0;
+    top: 0;
+    opacity: 0;
+}
+
+#weather {
+    position: absolute;
+    height: 54px;
+    width: 104px;
+    top: 0;
+    left: 85px;
+    opacity: 0;
+}
+
+#notification {
+    position: absolute;
+    height: 54px;
+    width: 169px;
+    top: 0;
+    left: 189px;
+    opacity: 0;
+}
+
+#about {
+    position: absolute;
+    height: 54px;
+    width: 120px;
+    top: 0;
+    left: 358px;
+    opacity: 0;
+}
+
+#footer {
+    background-color: #414141;
+    color: white;
+    position: absolute;
+    top: 3800px;
+    width: 100%;
+    height: 100px;
+}
+
+#copyright {
+    position: relative;
+    top: 50px;
+    text-align: center;
+    color: rgb(163, 163, 163);
+}
+
+#stepDiv {
+    background-color: rgb(223, 223, 223);
+    height: 2700px;
+}
+
+#downloadSteps {
+    text-align: center;
+    font-weight: bold;
+    font-size: 50px;
+    position: relative;
+    top: 50px;
+}
+
+#steps {
+    text-align: center;
+    position: relative;
+    top: 50px;
+}
+
+#exe {
+    position: absolute;
+    top: 100px;
+    left: 42%;
+}
+
+#defender {
+    position: relative;
+    top: 50px;
+}
+
+#weatherSteps {
+    width: 50%;
+    height: auto;
+}
+
+.slide {
+    display: block;
+    opacity: 1;
+    animation: slide 1s;
+}
+
+.slide1 {
+    display: block;
+    opacity: 1;
+    animation: slide1 1s;
+}
+
+.spin {
+    display: block;
+    opacity: 1;
+    animation: spin 1s linear;
+}
+
+.fade {
+    display: block;
+    opacity: 0;
+    animation: fade 3s;
+}
+
+@keyframes spin {
+    0%{transform: rotate(-30deg);}
+    10%{transform: rotate(-40deg);}
+    15%{transform: rotate(-50deg);}
+    20%{transform: rotate(-60deg);}
+    30%{transform: rotate(-70deg);}
+    40%{transform: rotate(-80deg);}
+    50%{transform: rotate(-80deg);}
+    60%{transform: rotate(200deg);}
+    70%{transform: rotate(400deg);}
+    80%{transform: rotate(600deg);}
+    90%{transform: rotate(720deg);}
+    100%{transform: rotate(720deg);}
+}
+
+@keyframes slide {
+    0%{left: -200px; opacity: 0;}
+    100%{left: 20px; opacity: 1;}
+}
+
+@keyframes slide1 {
+    0%{left: 200px; opacity: 0;}
+    100%{left: -30px; opacity: 1;}
+}
+
+@keyframes fade {
+    0%{opacity: 0;}
+    100%{opacity: 1;}
+}
+
+@media screen and (max-width: 600px) {
+    #mandawImg {
+        width: 80%;
+        height: auto;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        position: relative;
+        left: 10px;
+    }
+    #weatherText {
+        text-align: center;
+        position: relative;
+        top: 250px;
+        left: 0px;
+        font-weight: 1000;
+        font-size: 10vw;
+    }
+    #mandawBot {
+        text-align: center;
+        position: relative;
+        left: -5px;
+        font-weight: 1000;
+    }
+    #ces {
+        position: relative;
+        top: 400px;
+        left: 0px;
+        text-align: center;
+        font-size: 8vw;
+    }
+    #title {
+        text-align: center;
+        font-size: 18vw;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    #wbg {
+        opacity: 0;
+        width: 0%;
+        height: 0px;
+    }
+    #mbg {
+        opacity: 0;
+        width: 0%;
+        height: 0px;
+    }
+    #weather {
+        top: 54px;
+        left: 0;
+    }
+    #notification {
+        left: 0;
+        top: 107px;
+    }
+    #about {
+        left: 0;
+        top: 160px;
+    }
+    #mandawBot {
+        text-align: center;
+        position: relative;
+        left: -5px;
+        font-weight: 1000;
+        font-size: 10vw;
+    }
+    #weatherText {
+        text-align: center;
+    }
+    #mandawweather {
+        width: 80%;
+        height: auto;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        position: relative;
+        left: -5px;
+    }
+    #ces {
+        position: relative;
+        top: 500px;
+        left: 0px;
+        text-align: center;
+    }
+    #haf {
+        position: relative;
+        top: 1080px;
+        left: 0px;
+        text-align: center;
+        font-size: 8vw;
+    }
+    #btn {
+        position: relative;
+        top: 1150px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        position: relative;
+        left: 5px;
+        width: 50%;
+        font-size: 5vw;
+    }
+    .download {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        position: relative;
+        top: 200px;
+        width: 50%;
+        font-size: 5vw;
+    }
+    #download {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        position: relative;
+        top: -500px;
+        width: 50%;
+        font-size: 5vw;
+    }
+    #mandawImg {
+        margin-left: auto;
+        margin-right: auto;    
+    }
+    .bg {
+        width: 100%;
+        height: 100vh;
+        padding: 0px 0px;
+    }
+    .topnav a {
+        font-size: 5vw; 
+    }
+    #footer {
+        position: absolute;
+        top: 3000px;
+    }
+    #downloadSteps {
+        font-size: 30px;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    #steps {
+        font-size: 20px;
+        text-align: center;
+    }
+    #exe {
+        width: 50%;
+        position: relative;
+        left: 0;
+        top: 30px;
+        height: auto;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    #defender {
+        width: 70%;
+        height: auto;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    #run {
+        width: 70%;
+        height: auto;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    #stepDiv {
+        height: 2300px;
+    }
+    @keyframes slide {
+        0%{left: -200px; opacity: 0;}
+        100%{left: -5px; opacity: 1;}
+    }
+    
+    @keyframes slide1 {
+        0%{left: 200px; opacity: 0;}
+        100%{left: 10px; opacity: 1;}
+    }
+}
